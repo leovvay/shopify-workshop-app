@@ -10,7 +10,7 @@ import ClientRouter from '../components/ClientRouter';
 class MyApp extends App {
     render() {
         const { Component, pageProps, shopOrigin } = this.props;
-        const config = { apiKey: API_KEY, shopOrigin, forceRedirect: true };
+        const config = { apiKey: process.env.SHOPIFY_API_SECRET, shopOrigin, forceRedirect: true };
 
         return (
             <React.Fragment>
