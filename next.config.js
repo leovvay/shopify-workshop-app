@@ -4,6 +4,8 @@ const { default: Shopify } = require('@shopify/shopify-api');
 
 const apiKey =  JSON.stringify(Shopify.Context.API_KEY);
 
+console.log('apikeyfromwindow:', apiKey)
+
 module.exports = {
     webpack: (config) => {
         const env = { API_KEY: apiKey };
