@@ -22,9 +22,7 @@
     "next": "^10.0.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "webpack": "4"
-  },
-  "devDependencies": {
+    "webpack": "4",
     "dotenv": "^8.2.0"
-  }
+  },
 }
