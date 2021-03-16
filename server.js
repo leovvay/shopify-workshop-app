@@ -9,6 +9,8 @@ const Router = require('koa-router');
 
 dotenv.config();
 
+console.log('the api key', process.env.SHOPIFY_API_KEY);
+
 Shopify.Context.initialize({
     API_KEY: process.env.SHOPIFY_API_KEY,
     API_SECRET_KEY: process.env.SHOPIFY_API_SECRET,
