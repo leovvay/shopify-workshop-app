@@ -56,7 +56,7 @@ app.prepare().then(() => {
 
         console.log(shop)
         if (ACTIVE_SHOPIFY_SHOPS[shop] === undefined) {
-            ctx.redirect(`/auth?shop=${shop}`);
+            ctx.redirect(`/auth?shop=${shop || 'vlad-workshop'}`);
         } else {
             await handleRequest(ctx);
         }
