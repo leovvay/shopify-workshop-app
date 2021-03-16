@@ -1,7 +1,5 @@
 require("dotenv").config();
 const webpack = require('webpack');
-const { default: Shopify } = require('@shopify/shopify-api');
-
 const apiKey =  JSON.stringify(process.env.SHOPIFY_API_KEY);
 
 console.log('apikeyfromwindow:', apiKey)
